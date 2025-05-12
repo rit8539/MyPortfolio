@@ -19,6 +19,11 @@
       font-family: 'Inter', sans-serif;
       color: white;
       padding: 2rem;
+      overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+      backface-visibility: hidden;       /* <- important for mobile flicker */
+  transform: translateZ(0);  
     }
     header {
       display: flex;
