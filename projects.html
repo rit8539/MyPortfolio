@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      font-family: 'Inter', sans-serif;
+      color: white;
+      padding: 2rem;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      padding: 1rem 2rem;
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffda79;
+    }
+    section {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 2rem;
+      margin-bottom: 3rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+      transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+      transition: transform 0.5s, box-shadow 0.5s;
+    }
+    section:hover {
+      transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(20px);
+      box-shadow: 0 12px 36px rgba(0,0,0,0.4);
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+    .project-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+      gap: 1.5rem;
+    }
+    .project {
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(8px);
+      border-radius: 15px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      transform: perspective(800px) rotateX(5deg) rotateY(5deg);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project:hover {
+      transform: perspective(800px) rotateX(0deg) rotateY(0deg) translateZ(10px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    .project img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 0.8rem;
+      transition: transform 0.5s;
+    }
+    .project:hover img {
+      transform: scale(1.1);
+    }
+    .project p {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+    .project a {
+      display: inline-block;
+      margin: 0.2rem;
+      padding: 0.4rem 0.8rem;
+      background: rgba(255,255,255,0.2);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: background 0.3s;
+    }
+    .project a:hover {
+      background: rgba(255,255,255,0.4);
+    }
+    
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>My Projects</h1>
+  <nav>
+    <a href="index.html#home">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="index.html#contact">Gallery</a>
+  </nav>
+</header>
+
+<section id="projects">
+  <h2>Core Java Projects</h2>
+  <div class="project-gallery">
+    <div class="project">
+      <img src="project2.jpg" alt="Library">
+      <p>Library Management System</p>
+      <a href="https://www.google.com/search?q=Library+Management+System+Java+project">View</a>
+      <a href="https://github.com/search?q=Library+Management+System+Java">GitHub</a>
+    </div>
+    <div class="project">
+      <img src="https://miro.medium.com/v2/resize:fit:554/0*eTIxpeBpBaErLqxD.jpg" alt="Bank">
+      <p>Bank Management System</p>
+      <a href="https://www.google.com/search?q=Bank+Management+System+Java+project">View</a>
+      <a href="https://github.com/search?q=Bank+Management+System+Java">GitHub</a>
+    </div>
+    <div class="project">
+      <img src="https://evintra-public.s3.eu-central-1.amazonaws.com/products/4353/images/138266/c/gqp6cB28bbdATyQOPWy71VGEzGp8eJdpru28HBIi-thumb.jpg" alt="Hotel">
+      <p>Hotel Reservation System</p>
+      <a href="https://www.google.com/search?q=Hotel+Reservation+System+Java+project">View</a>
+      <a href="https://github.com/search?q=Hotel+Reservation+System+Java">GitHub</a>
+    </div>
+    <div class="project">
+      <img src="https://s3-alpha.figma.com/hub/file/1475366719/a2e9ba6e-fc23-4175-b966-f4050d1aac18-cover.png" alt="Chat App">
+      <p>Chat Application</p>
+      <a href="https://www.google.com/search?q=Chat+Application+Java+project">View</a>
+      <a href="https://github.com/search?q=Chat+Application+Java">GitHub</a>
+    </div>
+    <div class="project">
+      <img src="https://media.istockphoto.com/id/1460822484/photo/warehouse-tablet-and-people-teamwork-for-storage-inventory-and-supply-chain-management-for.jpg?s=612x612&w=0&k=20&c=ADW05TJoWOGkNuLzzLlxwoVA5v4TzfVxDG4BsL5TP3I=" alt="Inventory">
+      <p>Inventory Management</p>
+      <a href="https://www.google.com/search?q=Inventory+Management+Java+project">View</a>
+      <a href="https://github.com/search?q=Inventory+Management+Java">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Python Projects</h2>
+  <div class="project-gallery">
+    <div class="project">
+      <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/f98eb6177449205.64d631cc72f17.png" alt="Weather App">
+      <p>Weather App</p>
+      <a href="https://www.google.com/search?q=Weather+App+Python+project">View</a>
+      <a href="https://github.com/search?q=Weather+App+Python">GitHub</a>
+    </div>
+    <div class="project">
+      <img src="https://5.imimg.com/data5/KL/FW/PM/SELLER-12751218/face-detection-system-500x500.jpg" alt="Face Recognition">
+      <p>Face Recognition System</p>
+      <a href="https://www.google.com/search?q=Face+Recognition+Python+project">View</a>
+      <a href="https://github.com/search?q=Face+Recognition+Python">GitHub</a>
+    </div>
+    <div class="project">
+      <img src="https://www.prismetric.com/wp-content/uploads/2023/04/cost-of-developing-an-expense-tracking-app.jpg" alt="Expense Tracker">
+      <p>Expense Tracker</p>
+      <a href="https://www.google.com/search?q=Expense+Tracker+Python+project">View</a>
+      <a href="https://github.com/search?q=Expense+Tracker+Python">GitHub</a>
+    </div>
+    <div class="project">
+      <img src="https://imageio.forbes.com/specials-images/dam/imageserve/1092571024/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds" alt="To-Do List">
+      <p>To-Do List App</p>
+      <a href="https://www.google.com/search?q=To-Do+List+Python+project">View</a>
+      <a href="https://github.com/search?q=To-Do+List+Python">GitHub</a>
+    </div>
+    <div class="project">
+      <img src="https://hasdata.com/_astro/preview.CEXhBcqA.jpg" alt="Web Scraper">
+      <p>Web Scraper</p>
+      <a href="https://www.google.com/search?q=Web+Scraper+Python+project">View</a>
+      <a href="https://github.com/search?q=Web+Scraper+Python">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>HTML & CSS Projects</h2>
+  <div class="project-gallery">
+    <div class="project">
+      <img src="https://marketplace.canva.com/EAFwckKNjDE/2/0/1600w/canva-black-white-grayscale-portfolio-presentation-vzScEqAI__M.jpg" alt="Portfolio">
+      <p>Portfolio Website</p>
+      <a href="https://www.google.com/search?q=Portfolio+Website+HTML+CSS">View</a>
+      <a href="https://github.com/search?q=Portfolio+Website+HTML+CSS">GitHub</a>
+    </div>
+    <div class="project">
+      <img src="https://dominotechnomedia.com/wp-content/uploads/2022/04/dominotechnomedia-landing-page-la-gi-0929585282.jpg" alt="Landing Page">
+      <p>Landing Page</p>
+      <a href="https://www.google.com/search?q=Landing+Page+HTML+CSS">View</a>
+      <a href="https://github.com/search?q=Landing+Page+HTML+CSS">GitHub</a>
+    </div>
+    <div class="project">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzmnuNE7Vg8_evlj5T85CKWArPluVly20wLw&s" alt="Restaurant">
+      <p>Restaurant Website</p>
+      <a href="https://www.google.com/search?q=Restaurant+Website+HTML+CSS">View</a>
+      <a href="https://github.com/search?q=Restaurant+Website+HTML+CSS">GitHub</a>
+    </div>
+    <div class="project">
+      <img src="https://code-projects.org/wp-content/uploads/2018/08/Screenshot-444.png" alt="Gallery">
+      <p>Photography Gallery</p>
+      <a href="https://www.google.com/search?q=Photography+Gallery+HTML+CSS">View</a>
+      <a href="https://github.com/search?q=Photography+Gallery+HTML+CSS">GitHub</a>
+    </div>
+    <div class="project">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO9DIPG4rLYDYg62txxju7P541aMeZMfINUQ&s" alt="Travel Blog">
+      <p>Travel Blog</p>
+      <a href="https://www.google.com/search?q=Travel+Blog+HTML+CSS">View</a>
+      <a href="https://github.com/search?q=Travel+Blog+HTML+CSS">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>JavaScript Projects</h2>
+  <div class="project-gallery">
+    <div class="project">
+      <img src="https://sketchelements.com/wp-content/uploads/2020/08/to-do-app.png" alt="Todo App">
+      <p>Todo App</p>
+      <a href="https://www.google.com/search?q=Todo+App+JavaScript">View</a>
+      <a href="https://github.com/search?q=Todo+App+JavaScript">GitHub</a>
+    </div>
+    <div class="project">
+      <img src="https://m.media-amazon.com/images/I/61NBrLwu9cL._AC_UF1000,1000_QL80_.jpg" alt="Calculator">
+      <p>Calculator</p>
+      <a href="https://www.google.com/search?q=Calculator+JavaScript">View</a>
+      <a href="https://github.com/search?q=Calculator+JavaScript">GitHub</a>
+    </div>
+    <div class="project">
+      <img src="https://i.pinimg.com/736x/b3/35/02/b33502e465346ace2a7f1df203d851a3.jpg" alt="Quiz App">
+      <p>Quiz App</p>
+      <a href="https://i.pinimg.com/736x/b3/35/02/b33502e465346ace2a7f1df203d851a3.jpg">View</a>
+      <a href="https://github.com/search?q=Quiz+App+JavaScript">GitHub</a>
+    </div>
+    <div class="project">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThxKA7HvO10GTQBbTTroY57QxgaI-W6kfyUw&s" alt="Weather App">
+      <p>Weather App</p>
+      <a href="https://www.google.com/search?q=Weather+App+JavaScript">View</a>
+      <a href="https://github.com/search?q=Weather+App+JavaScript">GitHub</a>
+    </div>
+    <div class="project">
+      <img src="https://cpstest.org/images/typing-speed-test-og.jpg" alt="Typing Test">
+      <p>Typing Speed Test</p>
+      <a href="https://www.google.com/search?q=Typing+Speed+Test+JavaScript">View</a>
+      <a href="https://github.com/search?q=Typing+Speed+Test+JavaScript">GitHub</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-starchecked"></span>
+<span class="fa fa-star"></span>
+</footer>
+
+</body>
+</html>
